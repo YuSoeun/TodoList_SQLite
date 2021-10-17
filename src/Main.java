@@ -25,10 +25,6 @@ public class Main {
 			e.printStackTrace();
 		}
 		
-//		for (Integer i = 26; i < 51; i++) {
-//			String s = i.toString();
-//			addItem(con, i, s, s, s, s);
-//		}
 		Scanner sc = new Scanner(System.in);
 		
 		boolean quit = false;
@@ -149,7 +145,8 @@ public class Main {
 				String create_date = rs1.getString("create_date");
 				String complate_status = rs1.getString("complate_status");
 				String name = rs1.getString("name");
-				System.out.println(id + ". " + "[" + name + "] " + subject + ", 내용: " + content + ", 세부사항: " + detail_content + ", 마감일: " + due_date + ", 완료여부: " + complate_status);
+				System.out.println(id + ". " + "[" + name + "] " + subject + ", 내용: " + content + ", 세부사항: "
+				+ detail_content+ ", 마감일: " + due_date + ", 완료여부: " + complate_status);
 			}
 			stat1.close();
 		} catch (SQLException e) {
